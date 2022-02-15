@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  height: 300px;
+}
+
+.header::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  background-image: url(../../assets/img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  border-radius: 11px;
+}
+
+// .header-img {
+//   position: absolute;
+//   content: "";
+//   -webkit-filter: brightness(10%);
+//   filter: brightness(50%);
+//   top: 0;
+//   left: 0px;
+//   border-radius: 11px;
+// }
+
+.header-logo {
+  text-transform: capitalize;
+  font-family: "sans-serif";
+  font-weight: 600;
+  font-size: 36px;
+  color: $colorText;
+  z-index: 100;
+  padding: 2rem;
+  max-width: 7rem;
+  text-align: center;
+  > span {
+    color: $primaryColor;
+  }
+}
+.discount-container {
+  position: relative;
+  height: 10rem;
+  width: 370px;
+  display: flex;
+  justify-self: center;
+  margin: auto;
+  box-sizing: border-box;
+
+  color: $colorText;
+
+  .discount-img {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    height: inherit;
+    z-index: -100;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    border-radius: 11px;
+  }
+  .discount {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
+.discount-point {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 11px 0 0 11px;
+  background-color: rgba(0, 0, 0, 0.5);
+  h4 {
+    font-size: 36px;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.discount-description {
+  flex-basis: 70%;
+  padding: 1rem;
+  overflow: hidden;
+  width: 100%;
+
+  > p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.carousel-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+.slick-dots li button:before {
+  font-size: 15px;
+}
