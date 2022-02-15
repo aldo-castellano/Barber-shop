@@ -1,0 +1,21 @@
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-gap: 1rem;
+  gap: 1rem;
+  .service {
+    background-color: $secondaryColor;
+    border-radius: 11px;
+    height: 150px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}

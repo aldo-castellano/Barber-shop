@@ -1,3 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .header {
   position: relative;
   height: 300px;
@@ -22,16 +28,6 @@
   border-radius: 11px;
 }
 
-// .header-img {
-//   position: absolute;
-//   content: "";
-//   -webkit-filter: brightness(10%);
-//   filter: brightness(50%);
-//   top: 0;
-//   left: 0px;
-//   border-radius: 11px;
-// }
-
 .header-logo {
   text-transform: capitalize;
   font-family: "sans-serif";
@@ -46,70 +42,17 @@
     color: $primaryColor;
   }
 }
-.discount-container {
-  position: relative;
-  height: 10rem;
-  width: 370px;
-  display: flex;
-  justify-self: center;
-  margin: auto;
-  box-sizing: border-box;
 
-  color: $colorText;
-
-  .discount-img {
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-    height: inherit;
-    z-index: -100;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%);
-    border-radius: 11px;
-  }
-  .discount {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-}
-.discount-point {
-  flex-basis: 30%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-  border-radius: 11px 0 0 11px;
-  background-color: rgba(0, 0, 0, 0.5);
-  h4 {
-    font-size: 36px;
-    margin: 0 auto;
-  }
-  p {
-    font-size: 24px;
-    font-weight: 600;
-  }
-}
-.discount-description {
-  flex-basis: 70%;
-  padding: 1rem;
-  overflow: hidden;
-  width: 100%;
-
-  > p {
-    font-size: 24px;
-    font-weight: 600;
-  }
-}
-.carousel-title {
+// corousel
+.title {
   text-align: center;
   margin: 2rem 0;
 }
-.slick-dots li button:before {
-  font-size: 15px;
+.slick-dots {
+  position: relative;
+  bottom: -10px;
+
+  > li button:before {
+    font-size: 15px;
+  }
 }
