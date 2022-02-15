@@ -1,0 +1,13 @@
+.button {
+  background-color: $primaryColor;
+  border: none;
+  box-shadow: none;
+  height: 45px;
+  border-radius: 50px;
+  color: $secondaryColor;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "roboto";
+  text-transform: uppercase;
+  display: inline-block;
+}

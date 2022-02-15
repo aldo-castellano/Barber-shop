@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  height: 70px;
+  background-color: $secondaryColor;
+  border-radius: 50px;
+}
+.nav-item {
+  border-radius: 50px;
+  height: 57px;
+  width: 57px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .nav-item-icon {
+    font-size: 30px;
+  }
+  .nav-item-text {
+    font-size: 10px;
+    font-weight: 300;
+    margin: 0;
+  }
+}

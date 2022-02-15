@@ -1,6 +1,8 @@
 import React from "react";
 import DiscountsMain from "./DiscountsMain";
 import Service from "./Service";
+import Button from "../../components/buttons/Button";
+import Nav from "../../components/nav/Nav";
 
 const Main = () => {
   return (
@@ -14,6 +16,8 @@ const Main = () => {
 
         <DiscountsMain></DiscountsMain>
         <Service></Service>
+        <Button text="pedir cita"></Button>
+        <Nav></Nav>
       </main>
     </>
   );
