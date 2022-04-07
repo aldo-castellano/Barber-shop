@@ -12,9 +12,8 @@ const DiscountsMain = () => {
   return (
     <Carousel title="Descuentos">
       {dataDiscounts.map((discount, key) => (
-        <div key={key}>
-          <Discounts data={discount}></Discounts>
-        </div>
+        // the Discount component receives the props data that must have an object as a value (point, discount, description, img) and avtiveModal that receives 'true' or 'false' to activate or not the modal
+        <Discounts key={key} data={discount} activeModal={true}></Discounts>
       ))}
     </Carousel>
   );
