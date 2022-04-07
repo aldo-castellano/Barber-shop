@@ -3,10 +3,15 @@ $background: #212122;
 $primaryColor: #ffa133;
 $secondaryColor: #2d2d2d;
 $colorText: rgb(228, 228, 228);
+* {
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
 body {
   background-color: $background;
-  font-family: "Roboto", sans-serif;
   color: $colorText;
+  min-height: calc(100vh - 102px);
+  position: relative;
 }
 img {
   width: 100%;
@@ -15,4 +20,5 @@ img {
   width: 95%;
   max-width: 1400px;
   margin: 0 auto;
+  // position: relative;
 }

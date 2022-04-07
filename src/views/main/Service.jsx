@@ -11,8 +11,8 @@ const Service = () => {
     <div>
       <h2 className="title">Servicios</h2>
       <div className="service-container">
-        {data.map((data) => (
-          <div className="service">
+        {data.map((data, key) => (
+          <div key={key} className="service">
             <p>{data.name}</p>
           </div>
         ))}

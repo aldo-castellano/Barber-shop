@@ -2,12 +2,12 @@ import React from "react";
 import DiscountsMain from "./DiscountsMain";
 import Service from "./Service";
 import Button from "../../components/buttons/Button";
-import Nav from "../../components/nav/Nav";
+import Modal from "../../components/modal/Modal";
 
 const Main = () => {
   return (
     <>
-      <main className="container main">
+      <main className="main">
         <header className="header">
           <h1 className="header-logo">
             barber<span> shop</span>
@@ -16,8 +16,8 @@ const Main = () => {
 
         <DiscountsMain></DiscountsMain>
         <Service></Service>
-        <Button text="pedir cita"></Button>
-        <Nav></Nav>
+
+        <Button text="pedir cita" route="/reserve"></Button>
       </main>
     </>
   );
